@@ -131,8 +131,8 @@ Menagerie, see [CONTRIBUTING](CONTRIBUTING.md).
 | [KUKA iiwa 14](kuka_iiwa_14/README.md)|[<img src="kuka_iiwa_14/iiwa_14.png" width="400">](kuka_iiwa_14/README.md)|B|
 | [Sawyer](rethink_robotics_sawyer/README.md)|[<img src="rethink_robotics_sawyer/sawyer.png" width="400">](rethink_robotics_sawyer/README.md)|C|
 | [Realsense D435i](realsense_d435i/README.md)|[<img src="realsense_d435i/d435i.png" width="400">](realsense_d435i/README.md)|B|
-| [PAL Tiago](pal_tiago/README.md)|[<img src="pal_tiago/tiago.png" width="400">](pal_tiago/README.md)|C|
-| [PAL Tiago Dual](pal_tiago_dual/README.md)|[<img src="pal_tiago_dual/tiago_dual.png" width="400">](pal_tiago_dual/README.md)|C|
+| [PAL TIAGo](pal_tiago/README.md)|[<img src="pal_tiago/tiago.png" width="400">](pal_tiago/README.md)|C|
+| [PAL TIAGo++](pal_tiago_dual/README.md)|[<img src="pal_tiago_dual/tiago_dual.png" width="400">](pal_tiago_dual/README.md)|C|
 
 For corresponding embedded videos, see the MuJoCo [documentation](https://mujoco.readthedocs.io/en/latest/models.html).
 
