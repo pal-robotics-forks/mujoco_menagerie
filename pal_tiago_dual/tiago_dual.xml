@@ -15,8 +15,7 @@
     <material name="orange" rgba="1 0.487 0 1"/>
     <material name="light_blue" rgba="0.79216 0.81961 0.93333 1"/>
 
-    <mesh file="sensors/sick_tim5511.stl"/>
-    <mesh file="sensors/sick_tim5512.stl"/>
+    <mesh file="sensors/sick_tim551.stl"/>
     <mesh file="base/base_link.stl"/>
     <mesh file="base/base_dock_link.stl"/>
     <mesh file="base/base_antena_link1.stl"/>
@@ -39,18 +38,15 @@
     <mesh file="arm/arm_41.stl" scale="-1 -1 -1"/>
     <mesh file="arm/arm_5-wrist-20171.stl" scale="-1 -1 -1"/>
     <mesh file="arm/arm_6-wrist-20171.stl" scale="-1 1 1"/>
-    <mesh file="gripper_link1.stl"/>
-    <mesh file="gripper_finger_link1.stl" scale="-1 -1 1"/>
-    <mesh file="gripper_finger_link2.stl"/>
+    <mesh file="gripper_link.stl"/>
+    <mesh file="gripper_finger_link.stl" scale="-1 -1 1"/>
+    <mesh file="gripper_finger_link.stl"/>
     <mesh file="arm/arm_12.stl" scale="1 -1 1"/>
     <mesh file="arm/arm_22.stl"/>
     <mesh file="arm/arm_32.stl"/>
     <mesh file="arm/arm_42.stl"/>
     <mesh file="arm/arm_5-wrist-20172.stl"/>
     <mesh file="arm/arm_6-wrist-20172.stl"/>
-    <mesh file="gripper_link2.stl"/>
-    <mesh file="gripper_finger_link3.stl" scale="-1 -1 1"/>
-    <mesh file="gripper_finger_link4.stl"/>
   </asset>
 
   <default class="main">
@@ -73,8 +69,8 @@
       <!-- <inertia ixx="0.22777" ixy="0.00035979" ixz="0.00015269" iyy="0.29991" iyz="1.7872E-05" izz="0.46036"/> -->
       <inertial pos="-0.00511 -0.00037 0.13715" mass="59.53854" diaginertia="2.326 2.585 3.471"/>
       <geom pos="0 0 0.0762" material="gray75" mesh="base_link"/>
-      <geom pos="-0.27512 0.18297 0.20864" quat="0 -0.382683 -0.92388 0" material="gray10" mesh="sick_tim5511"/>
-      <geom pos="0.27512 -0.18297 0.20864" quat="0 -0.92388 0.382683 0" material="gray10" mesh="sick_tim5512"/>
+      <geom pos="-0.27512 0.18297 0.20864" quat="0 -0.382683 -0.92388 0" material="gray10" mesh="sick_tim551"/>
+      <geom pos="0.27512 -0.18297 0.20864" quat="0 -0.92388 0.382683 0" material="gray10" mesh="sick_tim551"/>
       <geom pos="0.3535 0 0.1358" material="gray25" mesh="base_dock_link"/>
       <geom pos="-0.2015 -0.13 0.2927" material="gray75" mesh="base_antena_link1"/>
       <geom pos="-0.2015 0.13 0.2927" material="gray75" mesh="base_antena_link2"/>
@@ -152,18 +148,18 @@
                       <geom size="0.005 0.0025" pos="0 0 -0.047" quat="0 -1 1 0" type="cylinder" material="mercury"/>
                       <geom size="0.0225 0.00785" pos="0 0 -0.05385" quat="0 0 1 0" type="cylinder" material="mercury"/>
                       <geom size="0.025 0.004875" pos="0 0 -0.066575" quat="0 -1 1 0" type="cylinder" material="gray10"/>
-                      <geom pos="0 0 -0.076575" quat="1 0 0 -1" material="white" mesh="gripper_link1"/>
+                      <geom pos="0 0 -0.076575" quat="1 0 0 -1" material="white" mesh="gripper_link"/>
                       <body name="gripper_left_right_finger_link" pos="0 0 -0.076575" quat="1 0 0 -1">
                         <inertial pos="0.008658 0.019724 -0.149125" mass="0.107001" diaginertia="0.000242 0.000236 0.000018"/>
                         <joint name="gripper_left_right_finger_joint" axis="1 0 0" type="slide" range="0 0.045"
                           damping="1"/>
-                        <geom quat="4.63268e-05 0 0 1" material="black" mesh="gripper_finger_link1"/>
+                        <geom quat="4.63268e-05 0 0 1" material="black" mesh="gripper_finger_link"/>
                       </body>
                       <body name="gripper_left_left_finger_link" pos="0 0 -0.076575" quat="1 0 0 -1">
                         <inertial pos="-0.008658 -0.019724 -0.149125" mass="0.107001" diaginertia="0.000242 0.000236 0.000018"/>
                         <joint name="gripper_left_left_finger_joint" axis="-1 0 0" type="slide" range="0 0.045"
                           damping="1"/>
-                        <geom quat="4.63268e-05 0 0 1" material="black" mesh="gripper_finger_link2"/>
+                        <geom quat="4.63268e-05 0 0 1" material="black" mesh="gripper_finger_link"/>
                       </body>
                     </body>
                   </body>
@@ -202,18 +198,18 @@
                       <geom size="0.005 0.0025" pos="0 0 0.047" quat="-1 0 0 1" type="cylinder" material="mercury"/>
                       <geom size="0.0225 0.00785" pos="0 0 0.05385" quat="-1 0 0 0" type="cylinder" material="mercury"/>
                       <geom size="0.025 0.004875" pos="0 0 0.066575" quat="-1 0 0 1" type="cylinder" material="gray10"/>
-                      <geom pos="0 0 0.076575" quat="0 -1 1 0" material="white" mesh="gripper_link2"/>
+                      <geom pos="0 0 0.076575" quat="0 -1 1 0" material="white" mesh="gripper_link"/>
                       <body name="gripper_right_right_finger_link" pos="0 0 0.076575" quat="0 -1 1 0">
                         <inertial pos="0.008658 0.019724 -0.149125" mass="0.107001" diaginertia="0.000242 0.000236 0.000018"/>
                         <joint name="gripper_right_right_finger_joint" axis="1 0 0" type="slide" range="0 0.045"
                           damping="1"/>
-                        <geom quat="4.63268e-05 0 0 1" material="black" mesh="gripper_finger_link3"/>
+                        <geom quat="4.63268e-05 0 0 1" material="black" mesh="gripper_finger_link"/>
                       </body>
                       <body name="gripper_right_left_finger_link" pos="0 0 0.076575" quat="0 -1 1 0">
                         <inertial pos="-0.008658 -0.019724 -0.149125" mass="0.107001" diaginertia="0.000242 0.000236 0.000018"/>
                         <joint name="gripper_right_left_finger_joint" axis="-1 0 0" type="slide" range="0 0.045"
                           damping="1"/>
-                        <geom quat="4.63268e-05 0 0 1" material="black" mesh="gripper_finger_link4"/>
+                        <geom quat="4.63268e-05 0 0 1" material="black" mesh="gripper_finger_link"/>
                       </body>
                     </body>
                   </body>
