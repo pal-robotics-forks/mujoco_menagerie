@@ -10,14 +10,14 @@
 
   <actuator>
     <!-- Arm actuators -->
-    <position class="position" name="arm_position_1_position" joint="arm_1_joint" inheritrange="1.0" kp="3000" dampratio="1.0"/>
-    <position class="position" name="arm_position_2_position" joint="arm_2_joint" inheritrange="1.0" kp="3000" dampratio="1.0"/>
-    <position class="position" name="arm_position_3_position" joint="arm_3_joint" inheritrange="1.0" kp="3000" dampratio="1.0"/>
-    <position class="position" name="arm_position_4_position" joint="arm_4_joint" inheritrange="1.0" kp="3000" dampratio="1.0"/>
+    <position class="position" name="arm_position_1_position" joint="arm_1_joint" inheritrange="1.0" kp="3000"/>
+    <position class="position" name="arm_position_2_position" joint="arm_2_joint" inheritrange="1.0" kp="3000"/>
+    <position class="position" name="arm_position_3_position" joint="arm_3_joint" inheritrange="1.0" kp="3000"/>
+    <position class="position" name="arm_position_4_position" joint="arm_4_joint" inheritrange="1.0" kp="3000"/>
     <!-- Wrist actuators -->
-    <position class="position" name="arm_position_5_position" joint="arm_5_joint" inheritrange="1.0" kp="500" dampratio="1.0"/>
-    <position class="position" name="arm_position_6_position" joint="arm_6_joint" inheritrange="1.0" kp="500" dampratio="1.0"/>
-    <position class="position" name="arm_position_7_position" joint="arm_7_joint" inheritrange="1.0" kp="500" dampratio="1.0"/>
+    <position class="position" name="arm_position_5_position" joint="arm_5_joint" inheritrange="1.0" kp="500"/>
+    <position class="position" name="arm_position_6_position" joint="arm_6_joint" inheritrange="1.0" kp="500"/>
+    <position class="position" name="arm_position_7_position" joint="arm_7_joint" inheritrange="1.0" kp="500"/>
     <!-- End effector actuators -->
     <position class="position" name="gripper_left_finger_position" joint="gripper_left_finger_joint" inheritrange="0.999"
       forcerange="-5.197 5.197" kp="1000" kv="80"/>
