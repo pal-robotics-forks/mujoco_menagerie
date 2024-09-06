@@ -30,9 +30,9 @@
     <mesh file="arm/arm_4.stl"/>
     <mesh file="arm/arm_5-wrist-2017.stl"/>
     <mesh file="arm/arm_6-wrist-2017.stl"/>
-    <mesh file="gripper_link.stl"/>
-    <mesh file="gripper_finger_link.stl" scale="-1 -1 1"/>
-    <mesh file="gripper_finger_link1.stl"/>
+    <mesh file="gripper/gripper_link.stl"/>
+    <mesh name="gripper_right_finger_link" file="gripper/gripper_finger_link.stl" scale="-1 -1 1"/>
+    <mesh name="gripper_left_finger_link" file="gripper/gripper_finger_link.stl"/>
   </asset>
 
   <default>
@@ -165,12 +165,12 @@
                       <body name="gripper_right_finger_link" pos="0 0 0.076575" quat="0 -1 1 0">
                         <inertial pos="0.008658 0.019724 -0.149125" mass="0.107001" diaginertia="0.000242 0.000236 0.000018"/>
                         <joint name="gripper_right_finger_joint" axis="1 0 0" type="slide" range="0 0.045" damping="80" frictionloss="1.0"/>
-                        <geom quat="4.63268e-05 0 0 1" material="black" mesh="gripper_finger_link"/>
+                        <geom quat="4.63268e-05 0 0 1" material="black" mesh="gripper_right_finger_link"/>
                       </body>
                       <body name="gripper_left_finger_link" pos="0 0 0.076575" quat="0 -1 1 0">
                         <inertial pos="-0.008658 -0.019724 -0.149125" mass="0.107001" diaginertia="0.000242 0.000236 0.000018"/>
                         <joint name="gripper_left_finger_joint" axis="-1 0 0" type="slide" range="0 0.045" damping="80" frictionloss="1.0"/>
-                        <geom quat="4.63268e-05 0 0 1" material="black" mesh="gripper_finger_link1"/>
+                        <geom quat="4.63268e-05 0 0 1" material="black" mesh="gripper_left_finger_link"/>
                       </body>
                     </body>
                   </body>
