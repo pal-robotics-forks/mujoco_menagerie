@@ -289,70 +289,13 @@
     </body>
   </worldbody>
   <equality>
-    <!-- Left finger joints mimic outer left -->
-    <joint joint1="gripper_left_outer_finger_left_joint"
-           joint2="gripper_left_outer_finger_right_joint"
-           polycoef="0 1 0 0 0"
-           solimp="0.9 0.95 0.001"
-           solref="0.02 1" 
-           active="true"/>
-    <joint joint1="gripper_left_outer_finger_left_joint"
-           joint2="gripper_left_inner_finger_left_joint"
-           polycoef="0 1 0 0 0"
-           solimp="0.9 0.95 0.001"
-           solref="0.02 1" 
-           active="true"/>
-    <joint joint1="gripper_left_outer_finger_left_joint"
-           joint2="gripper_left_inner_finger_right_joint"
-           polycoef="0 1 0 0 0"
-           solimp="0.9 0.95 0.001"
-           solref="0.02 1" 
-           active="true"/>
-    <joint joint1="gripper_left_outer_finger_left_joint"
-           joint2="gripper_left_fingertip_left_joint"
-           polycoef="0 -1 0 0 0"
-           solimp="0.9 0.95 0.001"
-           solref="0.02 1" 
-           active="true"/>
-    <joint joint1="gripper_left_outer_finger_left_joint"
-           joint2="gripper_left_fingertip_right_joint"
-           polycoef="0 -1 0 0 0"
-           solimp="0.9 0.95 0.001"
-           solref="0.02 1" 
-           active="true"/>     
+ <equality>
+    <connect anchor="0.0 0.05 0.0" body1="gripper_right_outer_finger_left_link" body2="gripper_right_fingertip_left_link" name="gripper_right_finger_left_eq" solref="0.002 1" />
+    <connect anchor="0.0 0.05 0.0" body1="gripper_right_outer_finger_right_link" body2="gripper_right_fingertip_right_link" name="gripper_right_finger_right_eq" solref="0.002 1" />
+    <connect anchor="0.0 0.05 0.0" body1="gripper_left_outer_finger_left_link" body2="gripper_left_fingertip_left_link" name="gripper_left_finger_left_eq" solref="0.002 1" />
+    <connect anchor="0.0 0.05 0.0" body1="gripper_left_outer_finger_right_link" body2="gripper_left_fingertip_right_link" name="gripper_left_finger_right_eq" solref="0.002 1" />
+  </equality>
 
-           
-    <!-- Right finger joints mimic outer left -->
-    <joint joint1="gripper_right_outer_finger_left_joint"
-           joint2="gripper_right_outer_finger_right_joint"
-           polycoef="0 1 0 0 0"
-           solimp="0.9 0.95 0.001"
-           solref="0.02 1" 
-           active="true"/>
-    <joint joint1="gripper_right_outer_finger_left_joint"
-           joint2="gripper_right_inner_finger_left_joint"
-           polycoef="0 1 0 0 0"
-           solimp="0.9 0.95 0.001"
-           solref="0.02 1" 
-           active="true"/>
-    <joint joint1="gripper_right_outer_finger_left_joint"
-           joint2="gripper_right_inner_finger_right_joint"
-           polycoef="0 1 0 0 0"
-           solimp="0.9 0.95 0.001"
-           solref="0.02 1" 
-           active="true"/>
-    <joint joint1="gripper_right_outer_finger_left_joint"
-           joint2="gripper_right_fingertip_left_joint"
-           polycoef="0 -1 0 0 0"
-           solimp="0.9 0.95 0.001"
-           solref="0.02 1" 
-           active="true"/>
-    <joint joint1="gripper_right_outer_finger_right_joint"
-           joint2="gripper_right_fingertip_right_joint"
-           polycoef="0 -1 0 0 0"
-           solimp="0.9 0.95 0.001"
-           solref="0.02 1" 
-           active="true"/>  
    </equality>
    
   <contact>
