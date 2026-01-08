@@ -1,0 +1,14 @@
+<mujoco model="left_hip_xy">
+
+  <actuator>
+    <!-- position controlled -->
+    <position class="position" name="pos_left_hip_xy_l"
+      joint="left_hip_xy_slider_l" kp="100000" kv="1000"
+      ctrllimited="true" ctrlrange="-0.04 0.04" />
+
+    <position class="position" name="pos_left_hip_xy_r"
+      joint="left_hip_xy_slider_r" kp="100000" kv="1000"
+      ctrllimited="true" ctrlrange="-0.04 0.04" />
+  </actuator>
+
+</mujoco>

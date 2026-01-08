@@ -1,0 +1,65 @@
+<mujoco model="kangaroo_right_leg_excluded_contacts">
+    <!-- Right Leg -->
+    <exclude body1="baselink" body2="right_hip_z_motor" />
+    <exclude body1="baselink" body2="right_hip_z_yaw" />
+    <exclude body1="baselink" body2="right_hip_z_slider" />
+    <exclude body1="right_hip_z_yaw" body2="right_hip_z_slider" />
+
+    <exclude body1="baselink" body2="right_hip_xy_bracket_r" />
+    <exclude body1="baselink" body2="right_hip_xy_bracket_l" />
+
+    <exclude body1="baselink" body2="right_hip_xy_motor_l" />
+    <exclude body1="baselink" body2="right_hip_xy_motor_r" />
+
+    <exclude body1="baselink" body2="right_hip_xy_slider_l" />
+    <exclude body1="baselink" body2="right_hip_xy_slider_r" />
+
+    <exclude body1="baselink" body2="pelvis_1_link" />
+    <exclude body1="baselink" body2="pelvis_2_link" />
+
+    <exclude body1="pelvis_2_link" body2="right_hip_z_yaw" />
+
+    <exclude body1="right_hip_xy_bracket_l" body2="right_hip_xy_motor_l" />
+    <exclude body1="right_hip_xy_bracket_l" body2="right_hip_xy_slider_l" />
+    <exclude body1="right_hip_xy_motor_l" body2="right_hip_xy_slider_l" />
+
+    <exclude body1="right_hip_xy_bracket_r" body2="right_hip_xy_motor_r" />
+    <exclude body1="right_hip_xy_bracket_r" body2="right_hip_xy_slider_r" />
+    <exclude body1="right_hip_xy_motor_r" body2="right_hip_xy_slider_r" />
+
+    <exclude body1="right_hip_xy_legholder" body2="right_hip_z_yaw" />
+    <exclude body1="right_hip_xy_legholder" body2="right_hip_xy_slider_l" />
+    <exclude body1="right_hip_xy_legholder" body2="right_hip_xy_slider_r" />
+
+    <exclude body1="right_hip_xy_legholder" body2="right_ankle_xy_slider_l" />
+    <exclude body1="right_hip_xy_legholder" body2="right_ankle_xy_slider_r" />
+    <exclude body1="right_hip_xy_legholder" body2="right_leg_length_triangle" />
+
+    <exclude body1="right_leg_length_triangle" body2="right_leg_length_bar1" />
+    <exclude body1="right_ankle_xy_crank_l" body2="right_leg_length_femur" />
+    <exclude body1="right_ankle_xy_crank_l" body2="right_ankle_xy_slider_l" />
+    <exclude body1="right_ankle_xy_crank_r" body2="right_leg_length_femur" />
+    <exclude body1="right_ankle_xy_crank_r" body2="right_ankle_xy_slider_r" />
+
+    <exclude body1="right_leg_length_femur" body2="right_leg_length_bar3" />
+    <exclude body1="right_leg_length_femur" body2="right_leg_length_bar4" />
+    <exclude body1="right_leg_length_femur" body2="right_ankle_xy_bar2_r" />
+    <exclude body1="right_leg_length_femur" body2="right_ankle_xy_bar2_l" />
+    <exclude body1="right_leg_length_tibia" body2="right_leg_length_bar3" />
+    <exclude body1="right_leg_length_tibia" body2="right_leg_length_bar4" />
+
+    <exclude body1="right_leg_length_tibia" body2="right_leg_length_bar2" />
+
+    <exclude body1="right_ankle_xy_butterfly_l" body2="right_leg_length_tibia" />
+    <exclude body1="right_ankle_xy_butterfly_l" body2="right_leg_length_bar3" />
+    <exclude body1="right_ankle_xy_butterfly_l" body2="right_ankle_xy_bar1_l" />
+    <exclude body1="right_ankle_xy_butterfly_r" body2="right_leg_length_tibia" />
+    <exclude body1="right_ankle_xy_butterfly_r" body2="right_leg_length_bar4" />
+    <exclude body1="right_ankle_xy_butterfly_r" body2="right_ankle_xy_bar1_r" />
+
+    <exclude body1="right_ankle_xy_foot" body2="right_ankle_xy_bar2_r" />
+    <exclude body1="right_ankle_xy_foot" body2="right_ankle_xy_bar2_l" />
+    <exclude body1="right_ankle_xy_foot" body2="right_leg_length_tibia" />
+    
+    <exclude body1="right_leg_length_femur" body2="right_hip_z_yaw" />
+</mujoco>

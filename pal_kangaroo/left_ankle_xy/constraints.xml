@@ -1,0 +1,42 @@
+<mujoco model="left_ankle_xy">
+  <!-- three closed chains, three constraints (for each side of the mechanism) -->
+  <equality>
+    <!-- LEFT CHAIN -->
+    <connect anchor="0.06422919517 0 0.0"
+      name="left_crank_slider_l"
+      body1="left_ankle_xy_slider_l"
+      body2="left_ankle_xy_crank_l"
+      solref="0.00001 0.6" />
+
+    <connect anchor="-0.05196152423 -0.03 -0.028"
+      name="left_femur_l"
+      body1="left_ankle_xy_butterfly_l"
+      body2="left_ankle_xy_bar1_l"
+      solref="0.00001 0.6" />
+
+    <connect anchor="-0.035 0.0 0.060"
+      name="left_tibia_l"
+      body1="left_ankle_xy_foot"
+      body2="left_ankle_xy_bar2_l"
+      solref="0.00001 0.6" />
+
+    <!-- RIGHT CHAIN -->
+    <connect anchor="0.06422919517 0 0.0"
+      name="left_crank_slider_r"
+      body1="left_ankle_xy_slider_r"
+      body2="left_ankle_xy_crank_r"
+      solref="0.00001 0.6" />
+
+    <connect anchor="-0.05196152423 -0.03 0.028"
+      name="left_femur_r"
+      body1="left_ankle_xy_butterfly_r"
+      body2="left_ankle_xy_bar1_r"
+      solref="0.00001 0.6" />
+
+    <connect anchor="0.035 0.0 0.060"
+      name="left_tibia_r"
+      body1="left_ankle_xy_foot"
+      body2="left_ankle_xy_bar2_r"
+      solref="0.00001 0.6" />
+  </equality>
+</mujoco>

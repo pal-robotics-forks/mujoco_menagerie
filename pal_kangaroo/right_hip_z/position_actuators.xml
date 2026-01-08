@@ -1,0 +1,12 @@
+<mujoco model="right_hip_z">
+
+  <actuator>
+    <!-- position controlled -->
+    <position class="position"
+      name="pos_right_hip_z"
+      joint="right_hip_z_slider"
+      kp="100000" kv="1000"
+      ctrllimited="true" ctrlrange="-0.025 0.011" />
+  </actuator>
+
+</mujoco>

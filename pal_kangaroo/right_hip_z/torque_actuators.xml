@@ -1,0 +1,11 @@
+<mujoco model="right_hip_z">
+
+  <actuator>
+    <!-- torque controlled -->
+    <motor class="motor"
+      name="tor_right_hip_z"
+      joint="right_hip_z_slider" ctrllimited="true"
+      ctrlrange="-2000. 2000." />
+  </actuator>
+
+</mujoco>

@@ -1,0 +1,105 @@
+<mujoco model="right_hip_xy">
+
+  <body name="right_hip_xy_bracket_l" pos="0.011 0.035 -0.0261"
+    quat="0.70710678 0.00000000 0.70710678 0.00000000">
+    <geom class="color_midnight" type="mesh" mesh="hip_xy_bracket_l" />
+    <inertial
+      mass="0.15567857"
+      pos="0.00000297 0.0037508 0.04319781"
+      fullinertia="0.00023559 0.0001884 0.00008912 0.0 0.0 -0.00000702"
+    />
+
+    <joint name="right_hipyaw_yaw__hip_xy_bracket_l" type="hinge" pos="0 0 0" axis="0 0 1"
+      range="-3.14 3.14" />
+
+    <body name="right_hip_xy_motor_l" pos="0.0 0.0 0.0515"
+      quat="0.70551775 0.70551775 -0.04737831 0.04737831">
+      <geom class="color_motor" type="mesh" mesh="hip_xy_motor" />
+      <inertial
+        mass="0.66622372"
+        pos="-0.02006791 0.00018157 0.00001073"
+        fullinertia="0.00041147 0.00052123 0.00051598 0.00000298 0.00000012 -0.00000008"
+      />
+      <joint name="right_hip_xy_bracket_l__hip_xy_motor_l" type="hinge" pos="0 0 0"
+        axis="0 0 1"
+        range="-3.14 3.14" />
+
+      <body name="right_hip_xy_slider_l" pos="0.0144 0.0 0.0"
+        quat="0.70710678 0.0 0.70710678 0.0">
+        <geom class="color_metal" type="mesh" mesh="hip_xy_slider_l" />
+        <inertial
+          mass="0.141683"
+          pos="-0.000691 0.000037 0.016269"
+          fullinertia="0.000305 0.000308 0.000007 0.0 -0.000006 0.0"
+        />
+        <joint name="right_hip_xy_slider_l" type="slide" pos="0 0 0" axis="0 0 1"
+          range="-0.04 0.04" />
+      </body>
+    </body>
+
+  </body>
+
+  <body name="right_hip_xy_bracket_r" pos="0.011 -0.035 -0.0261"
+    quat="0.70710678 0.00000000 0.70710678 0.00000000">
+    <geom class="color_midnight" type="mesh" mesh="hip_xy_bracket_r" />
+    <inertial
+      mass="0.15567857"
+      pos="0.00000297 0.0037508 0.04319781"
+      fullinertia="0.00023559 0.0001884 0.00008912 0.0 0.0 0.00000702"
+    />
+
+    <joint name="right_hip_xy_baselink__hip_xy_bracket_r" type="hinge" pos="0 0 0" axis="0 0 1"
+      range="-3.14 3.14" />
+
+    <body name="right_hip_xy_motor_r" pos="0.0 0.0 0.0515"
+      quat="0.70551775 0.70551775 -0.04737831 0.04737831">
+      <geom class="color_motor" type="mesh" mesh="hip_xy_motor" />
+      <inertial
+        mass="0.66622372 "
+        pos="-0.02006791 0.00018157 0.00001073"
+        fullinertia="0.00041147 0.00052123 0.00051598 0.00000298 0.00000012 -0.00000008"
+      />
+      <joint name="right_hip_xy_bracket_r__hip_xy_motor_r" type="hinge" pos="0 0 0" axis="0 0 1"
+        range="-3.14 3.14" />
+
+      <body name="right_hip_xy_slider_r" pos="0.0144 0.0 0.0"
+        quat="0.70710678 0.0 0.70710678 0.0">
+        <geom class="color_metal" type="mesh" mesh="hip_xy_slider_r" />
+        <inertial
+          mass="0.141683"
+          pos="-0.000691 0.000037 0.016269"
+          fullinertia="0.000305 0.000308 0.000007 0.0 0.000006 0.0"
+        />
+        <joint name="right_hip_xy_slider_r" pos="0 0 0" axis="0 0 1"
+          type="slide" range="-0.015 0.015" />
+      </body>
+    </body>
+  </body>
+
+  <body name="right_hip_xy_ujoint1" pos="0.015 0.0 -0.118750" quat="0.70710678 -0.70710678 0.0 0.0">
+    <geom class="color_midnight" type="mesh" mesh="hip_xy_ujoint1" />
+    <inertial
+      mass="0.09053127"
+      pos="-0.00292778 0.0 0.00009621"
+      fullinertia="0.0000061 0.00008014 0.00008276 0.0 -0.00000004 0.0"
+    />
+    <joint name="right_hip_xy_pitch" type="hinge" pos="0 0 0"
+      axis="0 0 1" range="-3.14 3.14" />
+
+    <body name="right_hip_xy_legholder" pos="0.0 0.0 0.0"
+      quat="0.0 0.70710678 0.00000000 0.70710678">
+      <geom class="color_midnight" type="mesh" mesh="right_hip_xy_legholder" />
+      <inertial
+        mass="1.69246035"
+        pos="-0.04598151 -0.03418063 -0.01490301"
+        fullinertia="0.00616941 0.01009545 0.00639064 -0.00033546 -0.00142443 -0.00108552"
+      />
+      <joint name="right_hip_xy_roll" type="hinge" pos="0 0 0"
+        axis="0 0 1" range="-3.14 3.14" />
+
+      <include file="right_leg_length/leg_length_ankle_xy.xml" />
+
+    </body>
+  </body>
+
+</mujoco>

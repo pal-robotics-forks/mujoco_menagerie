@@ -1,0 +1,8 @@
+<mujoco model="right_leg">
+
+  <include file="right_hip_z/constraints.xml" />
+  <include file="right_hip_xy/constraints.xml" />
+  <include file="right_leg_length/constraints.xml" />
+  <include file="right_ankle_xy/constraints.xml" />
+
+</mujoco>

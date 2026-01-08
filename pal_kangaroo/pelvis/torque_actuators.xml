@@ -1,0 +1,11 @@
+<mujoco model="pelvis">
+  <actuator>
+    <!-- torque controlled -->
+    <motor class="motor" name="pelvis_1_actuator_position"
+      joint="pelvis_1_joint" ctrllimited="true"
+      ctrlrange="-2000. 2000." />
+    <motor class="motor" name="pelvis_2_actuator_position"
+      joint="pelvis_2_joint" ctrllimited="true"
+      ctrlrange="-2000. 2000." />
+  </actuator>
+</mujoco>

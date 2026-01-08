@@ -1,0 +1,14 @@
+<mujoco model="kangaroo_right_ankle_xy">
+  <actuator>
+    <!-- position controlled -->
+    <position class="position"
+      name="pos_right_ankle_xy_motor_l"
+      joint="right_ankle_xy_slider_l" kp="1000000" kv="1000"
+      ctrllimited="true" ctrlrange="-0.02 0.02" />
+    <position class="position"
+      name="pos_right_ankle_xy_motor_r"
+      joint="right_ankle_xy_slider_r" kp="1000000" kv="1000"
+      ctrllimited="true" ctrlrange="-0.02 0.02" />
+  </actuator>
+
+</mujoco>

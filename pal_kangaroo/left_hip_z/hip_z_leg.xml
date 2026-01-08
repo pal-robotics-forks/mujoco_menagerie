@@ -1,0 +1,45 @@
+<mujoco model="left_hip_z_leg">
+
+  <!-- rotation of 23.072452690349756 - 10.65277702 = 12.419675670349756 around z -->
+  <!-- pos="-0.09411373473 0.10023116340 -0.057" -->
+  <body name="left_hip_z_motor"
+    pos="-0.115115925 0.098831163 -0.03075"
+    
+    quat="0.0 0.9941324 0.1081701 0.0">
+    <geom class="color_motor" type="mesh" mesh="left_hip_z_motor" />
+    <inertial
+      mass="0.66358271"
+      pos="-0.01984475 -0.00018953 -0.00001431"
+      fullinertia="0.00041116 0.00050978 0.00050490 -0.00000311 -0.00000022 0.00000002"
+    />
+    <joint name="baselink__left_hip_z_motor" type="hinge" pos="0 0 0" axis="0 0 1"
+      range="-3.14 3.14" />
+
+    <body name="left_hip_z_slider" pos="0.0144 0.0 0.0" quat="1.0 1.0 0.0 0">
+      <geom class="color_metal" type="mesh" mesh="hip_z_slider" />
+      <inertial
+        mass="0.124321"
+        pos="0.028985 0.000042 -0.000042"
+        fullinertia="0.00000505 0.00017429 0.00017669 0.0 0.0 0.0"
+      />
+      <joint name="left_hip_z_slider" type="slide" pos="0 0 0" axis="1 0 0"
+        range="-0.025 0.011" />
+    </body>
+  </body>
+
+  <body name="left_hip_z_yaw" pos="-0.0150026 0.08 -0.0585" quat="1.0 0.0 0.0 0">
+    <geom class="color_midnight" type="mesh" mesh="left_hip_z_yaw" />
+    <geom class="collision" size="0.0795723 0.0413497" pos="0.0460974 2.61722e-07 -0.00312961" />
+    <inertial
+      mass="0.57890142"
+      pos="0.00983698 0.00040169 -0.0500141"
+      fullinertia="0.00190744 0.00136825 0.00061839 0.00000757 0.0000842 -0.00004758"
+    />
+    <joint name="left_hip_z_yaw" pos="0 0 0" axis="0 0 1" type="hinge"
+      range="-3.14 3.14" />
+
+    <include file="left_hip_xy/hip_xy_leg.xml" />
+
+  </body>
+
+</mujoco>

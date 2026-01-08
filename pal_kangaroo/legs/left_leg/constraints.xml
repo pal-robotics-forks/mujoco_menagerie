@@ -1,0 +1,8 @@
+<mujoco model="left_leg">
+
+  <include file="left_hip_z/constraints.xml" />
+  <include file="left_hip_xy/constraints.xml" />
+  <include file="left_leg_length/constraints.xml" />
+  <include file="left_ankle_xy/constraints.xml" />
+
+</mujoco>

@@ -1,0 +1,30 @@
+<mujoco model="right_arm">
+  <body name="arm_right_1_link" pos="-3.94869e-08 -0.120835 0.387873" quat="1.01637e-06 8.52866e-07 0.642802 0.766033">
+    <inertial pos="-0.0065019 -0.002469 -0.040465" quat="0.939588 0.00749227 -0.143667 0.310611" mass="0.84824" diaginertia="0.00252565 0.00231317 0.000718382" />
+    <joint name="arm_right_1_joint" pos="0 0 0" axis="0 0 -1" range="-2.618 2.618" actuatorfrcrange="-43 43" />
+    <geom class="color_midnight" type="mesh" density="0" mesh="arm_1_link" />
+    <geom class="collision" size="0.0486559 0.0706888" pos="-0.0112961 -0.00871686 -0.0875926" quat="0.993843 -0.0674454 0.087908 1.78949e-08" />
+
+    <body name="arm_right_2_link" pos="-0.028337 -0.02 -0.155" quat="0.707105 0 -0.707108 0">
+      <inertial pos="-0.0295938 0.0049455 -0.024457" quat="0.205775 0.624918 0.297011 0.69204" mass="0.944175" diaginertia="0.00378412 0.0036803 0.000932577" />
+      <joint name="arm_right_2_joint" pos="0 0 0" axis="0 0 1" range="-1.1345 2.4435" actuatorfrcrange="-43 43" />
+      <geom class="color_midnight" type="mesh" density="0" mesh="arm_2_link" />
+      <geom class="collision" size="0.0645032 0.0664882" pos="-0.0638385 0.00999977 -0.0388" quat="0.659371 0.116779 0.742693 -1.43134e-06" />
+
+      <body name="arm_right_3_link" pos="-0.175 0.02 -0.028337" quat="0.707105 0 0.707108 0">
+        <inertial pos="0.0055739 0.0021181 -0.0345099" quat="0.939747 -0.00744705 0.146164 0.308959" mass="0.98919" diaginertia="0.00277623 0.00255027 0.000868792" />
+        <joint name="arm_right_3_joint" pos="0 0 0" axis="0 0 -1" range="-2.618 2.618" actuatorfrcrange="-43 43" />
+        <geom class="color_midnight" type="mesh" density="0" mesh="arm_3_link" />
+        <geom class="collision" size="0.0661152 0.0583363" pos="0.00922975 0.00265488 -0.0826432" quat="0.180736 -0.514963 0.837942 5.70431e-07" />
+
+        <body name="arm_right_4_link" pos="0.0283 0.02 -0.155" quat="0.707105 0 0.707108 0">
+          <inertial pos="0.0752641 -0.0079317 -0.023427" quat="0.573967 0.373833 0.602191 0.410095" mass="1.43535" diaginertia="0.0210305 0.0210101 0.00117153" />
+          <joint name="arm_right_4_joint" pos="0 0 0" axis="0 0 1" range="-1.1345 2.4435" actuatorfrcrange="-43 43" />
+          <geom class="color_midnight" type="mesh" density="0" mesh="arm_right_4_link" />
+          <geom class="collision" size="0.0559132 0.220143" pos="0.210649 -0.0172373 -0.0265895" quat="0.717524 0.0513886 0.694636 -1.38234e-06" />
+
+        </body>
+      </body>
+    </body>
+  </body>
+</mujoco>

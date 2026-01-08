@@ -1,0 +1,8 @@
+<mujoco model="left_leg">
+
+  <include file="left_hip_z/position_actuators.xml" />
+  <include file="left_hip_xy/position_actuators.xml" />
+  <include file="left_leg_length/position_actuators.xml" />
+  <include file="left_ankle_xy/position_actuators.xml" />
+
+</mujoco>

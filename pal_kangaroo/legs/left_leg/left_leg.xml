@@ -1,0 +1,3 @@
+<mujoco model="kangaroo_left_leg">
+  <include file="left_hip_z/hip_z_leg.xml" />
+</mujoco>

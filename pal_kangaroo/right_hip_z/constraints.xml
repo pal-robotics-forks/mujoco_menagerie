@@ -1,0 +1,9 @@
+<mujoco model="kangaroo_right_hip_yaw">
+  <equality>
+    <connect anchor="0.07682257764 0 0.0"
+      name="right_hip_z_slider"
+      body1="right_hip_z_slider"
+      body2="right_hip_z_yaw"
+      solref="0.0025 0.4" />
+  </equality>
+</mujoco>

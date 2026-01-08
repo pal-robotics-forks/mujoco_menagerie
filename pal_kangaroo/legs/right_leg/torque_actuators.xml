@@ -1,0 +1,8 @@
+<mujoco model="right_leg">
+
+  <include file="right_hip_z/torque_actuators.xml" />
+  <include file="right_hip_xy/torque_actuators.xml" />
+  <include file="right_leg_length/torque_actuators.xml" />
+  <include file="right_ankle_xy/torque_actuators.xml" />
+
+</mujoco>

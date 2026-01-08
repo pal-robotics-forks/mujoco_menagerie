@@ -1,0 +1,192 @@
+<mujoco model="right_ankle_xy">
+
+  <!-- right MOTOR, right SLIDER -->
+  <body name="right_ankle_xy_motor_l" pos="0.1149 -0.04665 -0.07508440251"
+    quat=" 0.63058455 0.31994237 -0.63058455 -0.31994237">
+    <geom class="color_motor" type="mesh" mesh="ankle_xy_motor" />
+    <inertial
+      mass="0.66358271"
+      pos="-0.01984475 -0.00018953 -0.00001431"
+      fullinertia="0.00041116 0.00050978 0.00050490 -0.00000311 -0.00000022 0.00000002"
+    />
+    <joint name="right_hip_xy_legholder__ankle_xy_motor_l" type="hinge" pos="0 0 0" axis="0 0 1"
+      range="-3.14 3.14" />
+
+    <body name="right_ankle_xy_slider_l" pos="0.0144 0.0 0.0" quat="1.0 1.0 0.0 0">
+      <geom class="color_metal" type="mesh" mesh="ankle_xy_slider" />
+      <inertial
+        mass="0.124321"
+        pos="0.01639147 0.00004171 -0.00004230"
+        fullinertia="0.00000505 0.00017429 0.00017669 -0.00000023 0.00000010 0.0"
+      />
+      <joint name="right_ankle_xy_slider_l" pos="0 0 0" axis="1 0 0"
+        type="slide" range="-0.012 0.012" />
+    </body>
+  </body>
+
+  <!-- RIGHT MOTOR, RIGHT SLIDER -->
+  <body name="right_ankle_xy_motor_r" pos="0.0189 -0.04665 -0.07508440251"
+    quat="-0.6305845541958228 -0.3199423698256537 0.6305845541958228 0.3199423698256537">
+    <geom class="color_motor" type="mesh" mesh="ankle_xy_motor" />
+    <inertial
+      mass="0.66358271"
+      pos="-0.01984475 -0.00018953 -0.00001431"
+      fullinertia="0.00041116 0.00050978 0.00050490 -0.00000311 -0.00000022 0.00000002"
+    />
+    <joint name="right_hip_xy_legholder__ankle_xy_motor_r" type="hinge" pos="0 0 0" axis="0 0 1"
+      range="-3.14 3.14" />
+
+    <body name="right_ankle_xy_slider_r" pos="0.0144 0.0 0.0" quat="1.0 1.0 0.0 0">
+      <geom class="color_metal" type="mesh" mesh="ankle_xy_slider" />
+      <inertial
+        mass="0.124321"
+        pos="0.01639147 0.00004171 -0.00004230"
+        fullinertia="0.00000505 0.00017429 0.00017669 0.00000023 -0.00000010 0.0"
+      />
+      <joint name="right_ankle_xy_slider_r" pos="0 0 0"
+        axis="1 0 0"
+        type="slide" range="-0.012 0.012" />
+    </body>
+  </body>
+
+  <!-- right CRANK, right FEMURBAR -->
+  <!-- initial rotation (z-axis): 35.0575803 - 24.41845329 = 10.63912701  -->
+  <body name="right_ankle_xy_crank_l" pos="0.1269 -0.090 0.0"
+    quat="0.70406134 -0.06555627 -0.70406134 0.06555627">
+    <geom class="color_midnight" type="mesh" mesh="ankle_xy_crank_l" />
+    <inertial
+      mass="0.06715867"
+      pos="-0.01738978 -0.01276063 0.00438955"
+      fullinertia="0.00001797 0.00003567 0.0000456 -0.00001439 0.00000669 0.00000419"
+    />
+    <joint name="right_hip_xy_legholder__ankle_xy_crank_l" pos="0 0 0" axis="0 0 1"
+      type="hinge"
+      range="-3.14 3.14" />
+
+    <!-- initial rotation of linkage: 10.63912701 - 8.99628952 = 1.6428374899999998 -->
+    <body name="right_ankle_xy_bar1_l" pos="-0.0522633961 -0.02947105924 0.012"
+      quat="0.99989723 0.0 0.0 -0.01433597">
+      <geom class="color_bar" type="mesh" mesh="ankle_xy_bar1_l" />
+      <inertial mass="0.10963206 " pos="0.03625286 -0.18651304 -0.00896453"
+        fullinertia="0.00150836	0.00006205 0.00156171 0.00029217	0.00001410 -0.00007253" />
+      <joint name="right_ankle_xy_crank_l__ankle_xy_bar1_l" pos="0 0 0"
+        axis="0 0 1"
+        type="hinge"
+        range="-3.14 3.14" />
+    </body>
+  </body>
+
+  <!-- RIGHT CRANK, RIGHT FEMURBAR (Z reflected)-->
+  <body name="right_ankle_xy_crank_r" pos="0.0069 -0.090 0.0"
+    quat="0.70406134 -0.06555627 -0.70406134 0.06555627">
+    <geom class="color_midnight" type="mesh" mesh="ankle_xy_crank_r" />
+    <inertial
+      mass="0.06715867"
+      pos="-0.01738978 -0.01276063 -0.00438955"
+      fullinertia="0.00001797 0.00003567 0.0000456 -0.00001439 -0.00000669 -0.00000419"
+    />
+    <joint name="right_hip_xy_legholder__ankle_xy_crank_r" pos="0 0 0" axis="0 0 1"
+      type="hinge"
+      range="-3.14 3.14" />
+
+    <!-- initial rotation of linkage: 10.63912701 - 8.99628952 = 1.6428374899999998 -->
+    <body name="right_ankle_xy_bar1_r" pos="-0.0522633961 -0.02947105924 -0.012"
+      quat="0.99989723 0.0 0.0 -0.01433597">
+      <geom class="color_bar" type="mesh" mesh="ankle_xy_bar1_r" />
+      <inertial mass="0.10963206 " pos="0.03625286 -0.18651304 0.00896453"
+        fullinertia="0.00150836	0.00006205 0.00156171 0.00029217	-0.00001410 0.00007253" />
+      <joint name="right_ankle_xy_crank_r__ankle_xy_bar1_r" pos="0 0 0"
+        axis="0 0 1"
+        type="hinge"
+        range="-3.14 3.14" />
+    </body>
+  </body>
+
+  <!-- FEMUR -->
+  <!-- femur vertical axes (Y) is poiting toward the screw axis. in the initial position, the
+      coordinates are roatated 8.99628952 deg (see drwaing -->
+  <body name="right_leg_length_femur" pos="0.0669 -0.090 0.0"
+    quat=" 0.7049288 -0.05545613 -0.7049288  0.05545613">
+    <geom class="color_midnight" type="mesh" mesh="leg_length_femur" />
+    <inertial mass="2.83733188" pos="0.04008 -0.08137148 0.00260816"
+      fullinertia="0.04047631	0.00315268 0.04144966 0.00493908 0.00007636 -0.0007031" />
+
+    <!-- right BUTTERFLY, right TIBIABAR -->
+    <!-- the butterfly is rotated 8.99628952 deg with respect to the femur *see drawings -->
+    <body name="right_ankle_xy_butterfly_l" pos="0.07250741824 -0.37301832971 -0.0380"
+      quat="0.99995679 0.0 0.0 0.00929622">
+      <geom class="color_motor" type="mesh" mesh="ankle_xy_butterfly_l" />
+      <inertial mass="0.11997407" pos="-0.02097604 -0.00160159 -0.0081551"
+        fullinertia="0.00004343	0.00005776 0.00008487 -0.00000482	-0.00001375 -0.00000482" />
+      <joint name="right_ankle_xy_femur__ankle_xy_butterfly_l" pos="0 0 0" axis="0 0 1"
+        type="hinge"
+        range="-3.14 3.14" />
+
+      <body name="right_ankle_xy_bar2_l" pos="-0.05196152423 0.03 -0.005"
+        quat="1.0 0.0 0.0 0.0">
+        <geom class="color_bar" type="mesh" mesh="ankle_xy_bar2_l" />
+        <inertial mass="0.14864830" pos="-0.11921821 -0.20592843 0.00501213"
+          fullinertia="0.00189285 0.00063690 0.00252510 -0.00109290 0.00002673 0.00004635" />
+        <joint name="right_ankle_xy_butterfly_l__ankle_xy_bar2_l" type="ball"
+          pos="0 0 0" />
+      </body>
+
+    </body>
+
+    <!-- RIGHT BUTTERFLY, RIGHT TIBIABAR (Z reflected)-->
+    <body name="right_ankle_xy_butterfly_r" pos="0.07250741824 -0.37301832971 0.0380"
+      quat="0.99995679 0.0 0.0 0.00929622">
+      <geom class="color_motor" type="mesh" mesh="ankle_xy_butterfly_r" />
+      <inertial mass="0.11997407" pos="-0.02097604 -0.00160159 0.0081551"
+        fullinertia="0.00004343	0.00005776 0.00008487 -0.00000482	0.00001375 0.00000482" />
+      <joint name="right_ankle_xy_femur__ankle_xy_butterfly_r" pos="0 0 0" axis="0 0 1"
+        type="hinge"
+        range="-3.14 3.14" />
+
+      <body name="right_ankle_xy_bar2_r" pos="-0.05196152423 0.03 0.005"
+        quat="1.0 0.0 0.0 0.0">
+        <geom class="color_bar" type="mesh" mesh="ankle_xy_bar2_r" />
+        <inertial mass="0.14864830" pos="-0.11921821 -0.20592843 -0.00501213"
+          fullinertia="0.00189285 0.00063690 0.00252510 -0.00109290 -0.00002673 -0.00004635" />
+        <joint name="right_ankle_xy_butterfly_r__ankle_xy_bar2_r" type="ball"
+          pos="0 0 0" />
+      </body>
+
+    </body>
+
+    <body name="right_ankle_xy_tibia" pos="0.07250741824 -0.37301832971 0.00"
+      quat="1.0 0.0 0.0 0.0">
+      <geom class="color_midnight" type="mesh" mesh="ankle_xy_tibia" />
+      <inertial mass="0.70455712" pos="-0.04457726 -0.12480687  0.00007710"
+        fullinertia="0.00728648	0.00338197 0.01046211 -0.00455680	0.00001218 0.00001801" />
+      <!-- no knee joint here -->
+
+      <body name="right_ankle_xy_ujfoot" pos="-0.18422765569 -0.33235548871 0.0"
+        quat="0.96815575 0.0 0.0 -0.25034866">
+        <geom class="color_midnight" type="mesh" mesh="ankle_xy_ujfoot" />
+        <inertial mass="0.09058321" pos="-0.00759993 0.0 0.0"
+          fullinertia="0.00000574	0.00003549 0.00003319 0.0	0.0 0.0" />
+
+        <!-- foot pitch -->
+        <joint name="right_ankle_xy_pitch" pos="0 0 0" axis="0 0 1"
+          type="hinge"
+          range="-0.3491 0.3491" />
+        <site name="sensor_tor_pitch" />
+
+        <body name="right_ankle_xy_foot" pos="0.0 0.0 0.0"
+          quat="1.0 0.0 -1.0 0.0">
+          <geom class="color_midnight" type="mesh" mesh="ankle_xy_foot" />
+          <inertial mass="0.6156305" pos="0.00000599 -0.02972438 -0.00560123"
+            fullinertia="0.00191507	0.00199231 0.00059907 -0.00000005	-0.00000009 0.00042935" />
+
+          <!-- foot roll -->
+          <joint name="right_ankle_xy_roll" pos="0 0 0" axis="0 0 1"
+            type="hinge"
+            range="-0.3491 0.3491" />
+          <site name="sensor_tor_roll" />
+        </body>
+
+      </body>
+    </body>
+  </body>
+</mujoco>

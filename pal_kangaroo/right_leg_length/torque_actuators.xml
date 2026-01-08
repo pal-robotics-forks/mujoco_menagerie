@@ -1,0 +1,9 @@
+<mujoco model="kangaroo_right_leglength">
+  <actuator>
+    <!-- torque controlled -->
+    <motor class="motor" name="tor_right_leg_length"
+      joint="right_leg_length_slider" ctrllimited="true"
+      ctrlrange="-2000. 2000." group="3" />
+  </actuator>
+
+</mujoco>

@@ -1,0 +1,29 @@
+<mujoco model="kangaroo_right_leglength">
+    <!-- four closed chains, four constraints -->
+    <equality>
+
+      <connect anchor="-0.090 0 0.0"
+        name="right_bar1_triangle"
+        body1="right_leg_length_bar1"
+        body2="right_leg_length_triangle"
+        solref="0.0025 0.4" />
+  
+      <connect anchor="0.40427 0.0 0.0"
+        name="right_bar2_tibia"
+        body1="right_leg_length_bar2"
+        body2="right_leg_length_tibia"
+        solref="0.0025 0.4" />
+  
+      <connect anchor="0.215 0.0 0.0"
+        name="right_bar3_tibia"
+        body1="right_leg_length_bar3"
+        body2="right_leg_length_tibia"
+        solref="0.0025 0.4" />
+  
+      <connect anchor="0.215 0.0 0.0"
+        name="right_bar4_tibia"
+        body1="right_leg_length_bar4"
+        body2="right_leg_length_tibia"
+        solref="0.0025 0.4" />
+    </equality>
+</mujoco>

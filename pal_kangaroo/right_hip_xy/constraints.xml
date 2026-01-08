@@ -1,0 +1,6 @@
+<mujoco model="right_hip_xy">
+  <equality>
+     <connect anchor="0.0 0.0 0.07908942454" body1="right_hip_xy_slider_l" body2="right_hip_xy_legholder" name="right_hip_xy_slider_la" solref="0.0025 1."/>
+     <connect anchor="0.0 0.0 0.07908942454" body1="right_hip_xy_slider_r" body2="right_hip_xy_legholder" name="right_hip_xy_slider_ra" solref="0.0025 1."/>
+  </equality>
+</mujoco>

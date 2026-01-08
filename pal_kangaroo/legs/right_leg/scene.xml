@@ -1,0 +1,26 @@
+<mujoco model="kangaroo_right_leg">
+
+  <include file="../../../common.xml" />
+
+  <option actuatorgroupdisable="0 2 3" />
+
+  <worldbody>
+    <geom name="floor" size="0 0 .05" type="plane" material="grid" condim="3" />
+
+    <body name="baselink" pos="0 0 1.0" quat="1 0 0 0">
+      <geom class="color_kangaroo" mesh="baselink" />
+      <inertial
+        mass="16.76803373"
+        pos="-0.07045985 0.00170303 0.16346082"
+        fullinertia="0.50865644 0.46730047 0.19754589 0.0001341 0.00025753 0.02558984"
+      />
+
+      <include file="../../right_hip_z/hip_z_leg.xml" />
+
+    </body>
+  </worldbody>
+  
+  <include file="actuators.xml" />
+  <include file="constraints.xml" />
+
+</mujoco>

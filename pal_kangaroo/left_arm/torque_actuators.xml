@@ -1,0 +1,17 @@
+<mujoco model="kangaroo_left_arm">
+  <actuator>
+      <!-- torque controlled -->
+      <motor class="motor" name="tor_left_1_arm"
+        joint="arm_left_1_joint" ctrllimited="true"
+        ctrlrange="-2000. 2000." />
+      <motor class="motor" name="tor_left_2_arm"
+        joint="arm_left_2_joint" ctrllimited="true"
+        ctrlrange="-2000. 2000." />
+      <motor class="motor" name="tor_left_3_arm"
+        joint="arm_left_3_joint" ctrllimited="true"
+        ctrlrange="-2000. 2000." />
+      <motor class="motor" name="tor_left_4_arm"
+        joint="arm_left_4_joint" ctrllimited="true"
+        ctrlrange="-2000. 2000." />
+  </actuator>
+</mujoco>

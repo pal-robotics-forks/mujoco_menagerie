@@ -1,0 +1,64 @@
+<mujoco model="kangaroo_visual_assets">
+
+  <mesh name="baselink" file="./base_link.STL" />
+
+  <!-- LEGS -->
+  <!-- hip z -->
+  <mesh name="hip_z_slider" file="./hip_z/slider.STL" />
+  <mesh name="left_hip_z_motor" file="./hip_z/left/motor.STL" />
+  <mesh name="left_hip_z_yaw" file="./hip_z/left/yaw.STL" />
+  <mesh name="right_hip_z_motor" file="./hip_z/right/motor.STL"/>
+  <mesh name="right_hip_z_yaw" file="./hip_z/right/yaw.STL" />
+  <!-- hip xy -->
+  <mesh name="hip_xy_bracket_l" file="./hip_xy/bracket_l.STL" />
+  <mesh name="hip_xy_bracket_r" file="./hip_xy/bracket_r.STL" />
+  <mesh name="hip_xy_motor" file="./hip_xy/motor.STL" />
+  <mesh name="hip_xy_slider_r" file="./hip_xy/slider_r.STL" />
+  <mesh name="hip_xy_slider_l" file="./hip_xy/slider_l.STL"/>
+  <mesh name="hip_xy_ujoint1" file="./hip_xy/ujoint1.STL" />
+  <mesh name="hip_xy_uj2_l" file="./hip_xy/ujoint2_l.STL" />
+  <mesh name="hip_xy_uj2_r" file="./hip_xy/ujoint2_r.STL" />
+  <mesh name="left_hip_xy_legholder" file="./hip_xy/left/legholder.STL" />
+  <mesh name="right_hip_xy_legholder" file="./hip_xy/right/legholder.STL"/>
+  <!-- leg length -->
+  <mesh name="leg_length_femur" file="./leg_length/femur.STL" />
+  <mesh name="leg_length_slider" file="./leg_length/nut.STL" />
+  <mesh name="leg_length_triangle" file="./leg_length/triangle.STL" />
+  <mesh name="leg_length_tibia" file="./leg_length/tibia.STL" />
+  <mesh name="leg_length_bar1" file="./leg_length/bar1.STL" />
+  <mesh name="leg_length_bar2" file="./leg_length/bar2.STL" />
+  <mesh name="leg_length_bar3" file="./leg_length/bar3.STL" />
+  <!-- ankle xy -->
+  <mesh name="ankle_baselink" file="./ankle_xy/legholder.STL" />
+  <mesh name="ankle_xy_motor" file="./ankle_xy/motor.STL" />
+  <mesh name="ankle_xy_slider" file="./ankle_xy/slider.STL" />
+  <mesh name="ankle_xy_crank_l" file="./ankle_xy/crank_l.STL" />
+  <mesh name="ankle_xy_crank_r" file="./ankle_xy/crank_r.STL"/>
+  <mesh name="ankle_xy_femur" file="./ankle_xy/femur.STL" />
+  <mesh name="ankle_xy_butterfly_l" file="./ankle_xy/butterfly_l.STL" />
+  <mesh name="ankle_xy_butterfly_r" file="./ankle_xy/butterfly_r.STL"/>
+  <mesh name="ankle_xy_bar1_l" file="./ankle_xy/femurbar_l.STL" />
+  <mesh name="ankle_xy_bar1_r" file="./ankle_xy/femurbar_r.STL"/>
+  <mesh name="ankle_xy_bar2_l" file="./ankle_xy/tibiabar_l.STL" />
+  <mesh name="ankle_xy_bar2_r" file="./ankle_xy/tibiabar_r.STL"/>
+  <mesh name="ankle_xy_tibia" file="./ankle_xy/tibia.STL" />
+  <mesh name="ankle_xy_ujfoot" file="./ankle_xy/ujfoot.STL" />
+  <mesh name="ankle_xy_foot" file="./ankle_xy/foot.STL" />
+
+  <!-- ARMS -->
+  <mesh name="arm_base_link" file="./arms/arm_base_link.stl" />
+  <mesh name="arm_1_link" file="./arms/arm_1_link.stl" />
+  <mesh name="arm_2_link" file="./arms/arm_2_link.stl" />
+  <mesh name="arm_3_link" file="./arms/arm_3_link.stl" />
+  <mesh name="arm_left_4_link" file="./arms/arm_left_4_link.stl" />
+  <mesh name="arm_right_4_link" file="./arms/arm_right_4_link.stl" />
+  
+  <!-- TORSO -->
+  <mesh name="torso_link" file="./torso/torso_link.stl" />
+  
+  <!-- PELVIS -->
+  <mesh name="base_link_with_pelvis" file="./base_link/base_link_with_pelvis.stl" />
+  <mesh name="pelvis_base_link" file="./pelvis/pelvis_base_link.stl" />
+  <mesh name="pelvis_1_link" file="./pelvis/pelvis_1_link.stl" />
+  <mesh name="pelvis_2_link" file="./pelvis/pelvis_2_link.stl" />
+</mujoco>

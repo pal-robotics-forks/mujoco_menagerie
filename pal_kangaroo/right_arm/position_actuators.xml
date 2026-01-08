@@ -1,0 +1,11 @@
+<mujoco model="right_arm">
+
+    <actuator>
+      <!-- position controlled -->
+        <position class="position" ctrllimited="true" ctrlrange="-2.618 2.618" joint="arm_right_1_joint" kp="100" name="arm_right_1_actuator_position" />
+        <position class="position" ctrllimited="true" ctrlrange="-1.1345 2.4435" joint="arm_right_2_joint" kp="100" name="arm_right_2_actuator_position" />
+        <position class="position" ctrllimited="true" ctrlrange="-2.618 2.618" joint="arm_right_3_joint" kp="100" name="arm_right_3_actuator_position" />
+        <position class="position" ctrllimited="true" ctrlrange="-1.1345 2.4435" joint="arm_right_4_joint" kp="100" name="arm_right_4_actuator_position" />
+    </actuator>
+  
+  </mujoco>

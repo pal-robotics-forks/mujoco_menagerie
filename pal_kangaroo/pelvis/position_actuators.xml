@@ -1,0 +1,7 @@
+<mujoco model="pelvis">
+  <actuator>
+    <!-- position controlled -->
+    <position class="position" ctrllimited="true" ctrlrange="-0.349066 0.349066" joint="pelvis_1_joint" kp="500" name="pelvis_1_actuator_position" />
+    <position class="position" ctrllimited="true" ctrlrange="-1.309 1.309" joint="pelvis_2_joint" kp="500" name="pelvis_2_actuator_position" />
+  </actuator>
+</mujoco>

@@ -1,0 +1,14 @@
+<mujoco model="kangaroo_left_ankle_xy">
+  <actuator>
+    <!-- torque controlled -->
+    <motor class="motor"
+      name="tor_left_ankle_xy_motor_l"
+      joint="left_ankle_xy_slider_l" ctrllimited="true"
+      ctrlrange="-2000. 2000." />
+    <motor class="motor"
+      name="tor_left_ankle_xy_motor_r"
+      joint="left_ankle_xy_slider_r" ctrllimited="true"
+      ctrlrange="-2000. 2000." />
+  </actuator>
+
+</mujoco>

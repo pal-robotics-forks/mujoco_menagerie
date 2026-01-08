@@ -1,0 +1,9 @@
+<mujoco model="kangaroo_right_leglength">
+  <actuator>
+    <!-- position controlled -->
+    <position class="position" name="pos_right_leg_length"
+      joint="right_leg_length_slider" kp="1000000" kv="1000"
+      ctrllimited="true" ctrlrange="0.0 0.149" />
+  </actuator>
+
+</mujoco>
