@@ -1,0 +1,50 @@
+<mujoco model="kangaroo">
+  
+  <include file="common.xml" />
+
+  <worldbody>
+    <body name="base_link" pos="0 0 1.2">
+      <site name="torso_frame" pos="-0.1 -0.01891 0.35"/>
+      <inertial pos="-0.10388 0.00292576 -0.0173482" quat="0.534501 0.501589 -0.492841 0.468855" mass="4.49765" diaginertia="0.0360221 0.0259667 0.017944" />
+      <joint name="origin" type="free" limited="false" actuatorfrclimited="false" />
+      <camera name="track" pos="1.678 -2.065 .499" xyaxes="0.781 0.624 0.000 -0.127 0.159 0.979" mode="trackcom"/>
+      <camera name="side" pos="0 -2.2 1" xyaxes="1 0 0 0 1 2" mode="trackcom"/>
+      <camera name="back" pos="-2.2 0 1" xyaxes="0 -1 0 1 0 2" mode="trackcom"/>
+      <camera name="front" pos="2.2 0 1" xyaxes="0 1 0 -1 0 2" mode="trackcom"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.25098 0.25098 0.25098 1" mesh="base_link_with_pelvis" />
+      <geom pos="-0.0918 0 -0.0455" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.25098 0.25098 0.25098 1" mesh="pelvis_base_link" />
+      <geom size="0.0588148 0.0758545" pos="-0.105334 -2.0459e-05 -0.0039883" quat="0.690602 0.00028847 0.723235 -1.36639e-06" type="capsule" rgba="0.75294 0.75294 0.75294 1" group="3" />
+
+      <include file="kangaroo_body.xml" />
+      
+    </body>
+  </worldbody>
+  
+  <actuator>
+    <position ctrllimited="true" ctrlrange="-0.349066 0.349066" group="2" joint="pelvis_1_joint" kp="500" name="pelvis_1_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-1.309 1.309" group="2" joint="pelvis_2_joint" kp="500" name="pelvis_2_actuator_position" />
+
+    <position ctrllimited="true" ctrlrange="-2.618 2.618" group="2" joint="arm_left_1_joint" kp="100" name="arm_left_1_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-1.1345 2.4435" group="2" joint="arm_left_2_joint" kp="100" name="arm_left_2_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-2.618 2.618" group="2" joint="arm_left_3_joint" kp="100" name="arm_left_3_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-1.1345 2.4435" group="2" joint="arm_left_4_joint" kp="100" name="arm_left_4_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-2.618 2.618" group="2" joint="arm_right_1_joint" kp="100" name="arm_right_1_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-1.1345 2.4435" group="2" joint="arm_right_2_joint" kp="100" name="arm_right_2_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-2.618 2.618" group="2" joint="arm_right_3_joint" kp="100" name="arm_right_3_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-1.1345 2.4435" group="2" joint="arm_right_4_joint" kp="100" name="arm_right_4_actuator_position" />
+    
+    <position ctrllimited="true" ctrlrange="-0.261799 0.698132" group="2" joint="leg_left_1_joint" kp="500" name="leg_left_1_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-0.741765 0.741765" group="2" joint="leg_left_2_joint" kp="500" name="leg_left_2_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-0.471239 0.471239" group="2" joint="leg_left_3_joint" kp="500" name="leg_left_3_actuator_position" />
+    <position ctrllimited="true" ctrlrange="0.131973 0.714166" group="2" joint="leg_left_length_joint" kp="3000" name="leg_left_length_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-0.741765 0.741765" group="2" joint="leg_left_4_joint" kp="100" name="leg_left_4_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-0.471239 0.471239" group="2" joint="leg_left_5_joint" kp="100" name="leg_left_5_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-0.261799 0.698132" group="2" joint="leg_right_1_joint" kp="500" name="leg_right_1_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-0.741765 0.741765" group="2" joint="leg_right_2_joint" kp="500" name="leg_right_2_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-0.471239 0.471239" group="2" joint="leg_right_3_joint" kp="500" name="leg_right_3_actuator_position" />
+    <position ctrllimited="true" ctrlrange="0.131973 0.714166" group="2" joint="leg_right_length_joint" kp="3000" name="leg_right_length_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-0.741765 0.741765" group="2" joint="leg_right_4_joint" kp="100" name="leg_right_4_actuator_position" />
+    <position ctrllimited="true" ctrlrange="-0.471239 0.471239" group="2" joint="leg_right_5_joint" kp="100" name="leg_right_5_actuator_position" />
+  </actuator>
+
+</mujoco>
